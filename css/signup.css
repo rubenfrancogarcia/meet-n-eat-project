@@ -1,0 +1,63 @@
+.container, label {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.active {
+    background-color: grey;
+}
+
+
+.navbar-menu-items {
+    flex-basis: 100%;
+    
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    padding-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 1;
+    font-size: 2em;
+}
+
+.navbar-menu-items > * {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    flex: 1 100%;
+    margin: 0;   
+}
+
+
+.navbar-menu ul {
+    list-style:none;
+    margin:0;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white;
+}
+.navbar-menu ul:before,.nav ul:after {
+    content:"";
+    display:table;
+}
+.navbar-menu ul:after {
+    clear:both;
+}
+.navbar-menu ul > li {
+    float:left;
+    position:relative;
+    height: 40px;
+    color: #4a80c2;
+}
+.navbar-menu li ul li {
+    width:150px;
+}
+
+.navbar-menu li ul {
+    position:absolute;
+    left:-30px;
+    top:36px;
+    z-index:999;
+    padding: 10px 0 0 20px;
+}
+
+
